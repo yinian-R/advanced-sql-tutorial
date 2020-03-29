@@ -1,0 +1,5 @@
+/* 其他解法2：使用HAVING子句 */
+SELECT key
+  FROM ArrayTbl2
+ GROUP BY key
+HAVING SUM(CASE WHEN val = 1 THEN 1 ELSE 0 END) = 10;

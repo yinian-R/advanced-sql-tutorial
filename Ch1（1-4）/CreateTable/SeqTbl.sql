@@ -1,0 +1,11 @@
+/* Ñ°ÕÒÈ±Ê§µÄ±àºÅ */
+CREATE TABLE SeqTbl
+(seq  INTEGER PRIMARY KEY,
+ name VARCHAR(16) NOT NULL);
+
+INSERT INTO SeqTbl VALUES(1,	'µÏ¿Ë');
+INSERT INTO SeqTbl VALUES(2,	'°²');
+INSERT INTO SeqTbl VALUES(3,	'À³Â¶');
+INSERT INTO SeqTbl VALUES(5,	'¿¨');
+INSERT INTO SeqTbl VALUES(6,	'ÂêÀö');
+INSERT INTO SeqTbl VALUES(8,	'±¾');

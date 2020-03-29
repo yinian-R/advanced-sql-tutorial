@@ -1,0 +1,14 @@
+/* 将已有编号方式转换为新的方式并统计 */
+CREATE TABLE PopTbl
+(pref_name VARCHAR(32) PRIMARY KEY,
+ population INTEGER NOT NULL);
+
+INSERT INTO PopTbl VALUES('德岛', 100);
+INSERT INTO PopTbl VALUES('香川', 200);
+INSERT INTO PopTbl VALUES('爱媛', 150);
+INSERT INTO PopTbl VALUES('高知', 200);
+INSERT INTO PopTbl VALUES('福冈', 300);
+INSERT INTO PopTbl VALUES('佐贺', 100);
+INSERT INTO PopTbl VALUES('长崎', 200);
+INSERT INTO PopTbl VALUES('东京', 400);
+INSERT INTO PopTbl VALUES('群马', 50);

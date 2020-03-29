@@ -1,0 +1,23 @@
+/* 作为乘法运算的连接 */
+CREATE TABLE Items
+ (item_no INTEGER PRIMARY KEY,
+  item    VARCHAR(32) NOT NULL);
+
+INSERT INTO Items VALUES(10, 'FD');
+INSERT INTO Items VALUES(20, 'CD-R');
+INSERT INTO Items VALUES(30, 'MO');
+INSERT INTO Items VALUES(40, 'DVD');
+
+CREATE TABLE SalesHistory
+ (sale_date DATE NOT NULL,
+  item_no   INTEGER NOT NULL,
+  quantity  INTEGER NOT NULL,
+  PRIMARY KEY(sale_date, item_no));
+
+INSERT INTO SalesHistory VALUES('2007-10-01',  10,  4);
+INSERT INTO SalesHistory VALUES('2007-10-01',  20, 10);
+INSERT INTO SalesHistory VALUES('2007-10-01',  30,  3);
+INSERT INTO SalesHistory VALUES('2007-10-03',  10, 32);
+INSERT INTO SalesHistory VALUES('2007-10-03',  30, 12);
+INSERT INTO SalesHistory VALUES('2007-10-04',  20, 22);
+INSERT INTO SalesHistory VALUES('2007-10-04',  30,  7);

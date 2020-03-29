@@ -1,0 +1,13 @@
+--移动累计值和移动平均值
+CREATE TABLE Accounts
+(prc_date DATE NOT NULL , 
+ prc_amt  INTEGER NOT NULL , 
+ PRIMARY KEY (prc_date)) ;
+
+INSERT INTO Accounts VALUES ('2006-10-26',  12000 );
+INSERT INTO Accounts VALUES ('2006-10-28',   2500 );
+INSERT INTO Accounts VALUES ('2006-10-31', -15000 );
+INSERT INTO Accounts VALUES ('2006-11-03',  34000 );
+INSERT INTO Accounts VALUES ('2006-11-04',  -5000 );
+INSERT INTO Accounts VALUES ('2006-11-06',   7200 );
+INSERT INTO Accounts VALUES ('2006-11-11',  11000 );

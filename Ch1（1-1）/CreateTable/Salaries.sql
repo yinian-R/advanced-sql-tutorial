@@ -1,0 +1,9 @@
+/* 员工工资信息表 */
+CREATE TABLE Salaries
+(name VARCHAR(32) PRIMARY KEY,
+ salary INTEGER NOT NULL);
+
+INSERT INTO Salaries VALUES('相田', 300000);
+INSERT INTO Salaries VALUES('神崎', 270000);
+INSERT INTO Salaries VALUES('木村', 220000);
+INSERT INTO Salaries VALUES('齐藤', 290000);
